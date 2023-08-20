@@ -11,6 +11,8 @@ $ pkg install python
 
 $ git clone https://github.com/Hacker-UZ/phoenix-userbot
 
+$ cd phoenix-userbot
+
 $ python setup.py
 
 $ python main.py
