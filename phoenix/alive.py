@@ -29,7 +29,7 @@ $ pkg install git
 
 $ pkg install python
 
-$ git clone https://github.com/Hacker-UZ/phoenix
+$ git clone https://github.com/Hacker-UZ/phoenix-userbot
 
 $ python setup.py
 
