@@ -12,7 +12,7 @@ async def alive(noob_py):
 		img = await client.download_profile_photo(username)
 		await client.edit_message(noob_py.message, "Good day...")
 		time.sleep(0.5)
-		await noob_py.respond("""**Foydalanuvchi: @{}**
+		await noob_py.respond("""**Foydalanuvchi:** @{}
 **Phoenix Userbot:** https://t.me/phoenix_userbot
 
 **Developer:** @programmer_www
