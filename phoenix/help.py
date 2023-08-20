@@ -54,8 +54,8 @@ Umumiy modullar: 60
 [42] Mute - Admin function - .mute (m, h, d)
 [43] Text to voice - .tts <lang code> reply text
 [44] Itp - image to pdf - .itp reply to image
-[45] About clock - datetime - .setbioclock <number>
-[46] Clocku - firstname clock - .setclock <number> <nickname>
+[45] Clock to bio - datetime - .setbioclock <number>
+[46] Clock to nick - firstname clock - .setclock <number> <nickname>
 [47] Timer - timer animation - .timer <number>
 [48] Afk - Afk mode - .afk-on <text> / .afk-off / .afk-info
 [49] Numbers - Numbers - .numbers <number>
