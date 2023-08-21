@@ -1,4 +1,4 @@
-from telethon import TelegramClient, events, sync
+from telethon import TelegramClient, events, sync, errors
 import asyncio
 @events.register(events.NewMessage(pattern="^.dump ?(.*)", outgoing=True))
 

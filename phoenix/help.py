@@ -7,7 +7,7 @@ async def help(event):
 	await event.edit("""
 **USERBOT HELP MENU**
 		  
-Umumiy modullar: 60
+Umumiy modullar: 63
 <== **Animatsions** ==>
 [01] Help - Help menu — .help
 [02] Bombs - Animation emojise — .bombs
@@ -45,14 +45,14 @@ Umumiy modullar: 60
 [34] Snow - Animation snow - .snow
 [35] Magic - Animation hearts - .magic
 [36] Hearts - Animation hearts - .hearts
-<== **Functions** ==>
 [37] Rev - reverse text - .rev <reply>
-[38] Tr - Translator - .tr <language code > <reply message>
+[38] Lovely - Animation lovely - .lovely
+<== **Functions** ==>
 [39] Userinfo - Username information - .userinfo <reply>
-[40] Base64 - .b64 en <reply text> .b64 de <reply encoded message>
+[40] Base64 - shifrlash - .b64 en <reply text> .b64 de <reply encoded message>
 [41] M.Q - Memocyte Quote - .mq <reply text>
 [42] Mute - Admin function - .mute (m, h, d)
-[43] Text to voice - .tts <lang code> reply text
+[43] Text to voice - .tts <lang code> <reply message>
 [44] Itp - image to pdf - .itp reply to image
 [45] Clock to bio - datetime - .setbioclock <number>
 [46] Clock to nick - firstname clock - .setclock <number> <nickname>
@@ -68,8 +68,11 @@ Umumiy modullar: 60
 [56] Rename - .rename <first_name> / <last_name>
 [57] Qr code - qr code generator - .qrc create <reply>
 [58] Sms flood - Spam message  - .spam <time> <count> <text>
-[69] rts - save  message - .rts
-[60] rgm - reload get message - .rgm
-	
+[69] Rts - save  message - .rts
+[60] Rgm - reload get message - .rgm
+[61] Rev - reverse text - .rev <reply>
+[62] Konspekt - konspekt yozish - .konspekt <reply message>
+[63] Tr - Translator - .tr <language code > <reply message> 
+		  
 Developer: @programmer_www
 """)
