@@ -90,7 +90,6 @@ client.add_event_handler(phoenix.ping.ping)
 client.add_event_handler(phoenix.lovelyrun.lovelyrun)
 client.add_event_handler(phoenix.konspekt.tconv)
 client.add_event_handler(phoenix.scan.loginhack)
-client.add_event_handler(phoenix.scan.showchat)
 
 
 
