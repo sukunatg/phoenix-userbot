@@ -5,14 +5,14 @@ import time
 client = phoenix.client.client
 
 @events.register(events.NewMessage(outgoing=True, pattern='\.alive'))
-async def alive(noob_py):
-		client = noob_py.client
+async def alive(event):
+		client = event.client
 		me = await client.get_me()
 		username = me.username
 		img = await client.download_profile_photo(username)
-		await client.edit_message(noob_py.message, "Good day...")
+		await client.edit_message(event.message, "Good day...")
 		time.sleep(0.5)
-		await noob_py.respond("""**Foydalanuvchi:** @{}
+		await event.respond("""**Foydalanuvchi:** @{ }
 **Phoenix Userbot:** https://t.me/phoenix_userbot
 
 **Developer:** @programmer_www
@@ -21,17 +21,17 @@ v.1.0.0
 
 📥 INSTALL 
 
-$ pkg update && pkg upgrade
+$ `pkg update && pkg upgrade`
 
-$ apt update && apt upgrade
+$ `apt update && apt upgrade`
 
-$ pkg install git
+$ `pkg install git`
 
-$ pkg install python
+$ `pkg install python`
 
-$ git clone https://github.com/Hacker-UZ/phoenix-userbot
+$ `git clone https://github.com/Hacker-UZ/phoenix-userbot`
 
-$ python setup.py
+$ `python setup.py`
 
-$ python main.py""".format(username, ' '), file=img)
-		await noob_py.message.delete()
+$ `python main.py`""".format(username, ' '), file=img)
+		await event.message.delete()

