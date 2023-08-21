@@ -1,6 +1,6 @@
 # phoenix-userbot
 
-#Commands for install
+# Commands for install
 $ pkg update && pkg upgrade
 
 $ apt update && apt upgrade
