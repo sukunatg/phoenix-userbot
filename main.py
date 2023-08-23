@@ -15,7 +15,7 @@ from telethon.tl.functions.account import UpdateProfileRequest
 import asyncio, aiocron, datetime
 from telethon.tl.functions.channels import EditBannedRequest
 from telethon.tl.types import ChatBannedRights, User
-import phoenix.client, phoenix.konspekt, phoenix.lovelyrun, phoenix.scan, phoenix.bombs, phoenix.help, phoenix.loading, phoenix.emoji, phoenix.dump, phoenix.sexy, phoenix.type, phoenix.magicrun, phoenix.animation, phoenix.animation2, phoenix.mute, phoenix.nq, phoenix.fuck, phoenix.rev, phoenix.tr, phoenix.userinfo, phoenix.base64, phoenix.react, phoenix.snow, phoenix.ar, phoenix.smsbomb, phoenix.qrc, phoenix.rename, phoenix.iptrace, phoenix.spam, phoenix.alive, phoenix.tagall, phoenix.afk, phoenix.timer, phoenix.ping
+import phoenix.client, phoenix.konspekt, phoenix.lovelyrun, phoenix.scan, phoenix.bombs, phoenix.help, phoenix.loading, phoenix.emoji, phoenix.dump, phoenix.sexy, phoenix.type, phoenix.magicrun, phoenix.animation, phoenix.animation2, phoenix.mute, phoenix.nq, phoenix.fuck, phoenix.rev, phoenix.tr, phoenix.userinfo, phoenix.base64, phoenix.react, phoenix.snow, phoenix.smsbomb, phoenix.rename, phoenix.iptrace, phoenix.spam, phoenix.alive, phoenix.tagall, phoenix.afk, phoenix.timer, phoenix.ping
 import os, sys
 #Developer: @programmer_www
 
@@ -63,8 +63,6 @@ client.add_event_handler(phoenix.userinfo.userinfo)
 client.add_event_handler(phoenix.base64.runb64)				
 client.add_event_handler(phoenix.react.react)
 client.add_event_handler(phoenix.snow.snow)
-client.add_event_handler(phoenix.ar.runar)
-client.add_event_handler(phoenix.qrc.runqrc)
 client.add_event_handler(phoenix.rename.rename)	
 client.add_event_handler(phoenix.iptrace.iptrace)
 client.add_event_handler(phoenix.spam.delayspam)
