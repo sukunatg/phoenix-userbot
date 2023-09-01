@@ -15,7 +15,7 @@ Umumiy modullar: 63
 [03] Loading  - Animation loading — .loading
 [04] Emoji  -  Emoji text editor - .emoji <here text>
 [05] Dump - Candy dump animate - .dump
-[06] ||Sexy - Animation porno - .sexy||
+[06] Sexy - Animation porno - .sexy
 [07] Typer - Animation write text - .type <here text>
 [08] Lul - Animatsion lul - .lul
 [09] Snake - Snake animation - .snake 
@@ -41,7 +41,7 @@ Umumiy modullar: 63
 [29] Police - Animation sirena - .police
 [30] Jio - Animation - .jio
 [31] Solarsystem - Animation - .solarsystem
-[32] ||Fuck - Fuck you - .fuck||
+[32] Fuck - Fuck you - .fuck
 [33] React - Reactions - .react help
 [34] Snow - Animation snow - .snow
 [35] Magic - Animation hearts - .magic
