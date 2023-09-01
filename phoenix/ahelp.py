@@ -38,7 +38,7 @@ New Animatsions
 [26] Count number - .count
 [27] BIG F - .kf
 [28] F - .f {text}
-[29] BIG oof - .bigoff
+[29] BIG oof - .bigoof
 [30] Flower - .flower {text}
 [31] Hearts anim - .vheart {text}
 [32] Love you anim - .luvart {text}
