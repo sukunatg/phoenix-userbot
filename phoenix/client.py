@@ -1,4 +1,4 @@
-from telethon import TelegramClient
+from telethon import TelegramClient, sync
 from telethon.sessions import StringSession
 from telethon.errors import SessionPasswordNeededError
 import os
